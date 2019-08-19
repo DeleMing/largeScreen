@@ -1,0 +1,375 @@
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+code,
+del,
+dfn,
+em,
+q,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+legend,
+caption,
+tbody,
+tfoot,
+thead,
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 14px;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+dialog,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  font-size: 14px;
+  color: #333;
+  background: #fff;
+  font-family: "Microsoft YaHei", "simsun", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+img {
+  border: 0;
+  vertical-align: bottom;
+}
+::-webkit-input-placeholder {
+  color: #999;
+}
+:-moz-placeholder {
+  color: #999;
+}
+::-moz-placeholder {
+  color: #999;
+}
+:-ms-input-placeholder {
+  color: #ccc;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+textarea {
+  overflow: auto;
+}
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+  outline: none;
+}
+input::-ms-clear {
+  display: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+ul,
+ol {
+  list-style: none;
+}
+/*自定义*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.imageBox {
+  text-align: center;
+}
+.imageBox img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.hidden {
+  display: none !important;
+}
+/* ------------------main--------------------- */
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #040e3a;
+}
+.el-dialog__body {
+  /*定义滚动条轨道 内阴影+圆角*/
+  /*定义滑块 内阴影+圆角*/
+}
+.el-dialog__body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #bec6c9;
+}
+.el-dialog__body::-webkit-scrollbar-track {
+  background: #040c2e;
+}
+.el-dialog__body::-webkit-scrollbar-thumb {
+  background-color: #4D97FF;
+  border-radius: 4px;
+}
+body .el-dialog {
+  height: 720px;
+  color: #36C6FF;
+  background-image: url('~@/assets/home/bgdialog.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: transparent;
+  text-align: left;
+  padding-left: 73px;
+  padding-right: 32px;
+}
+body .el-dialog .timeBox {
+  margin-bottom: 30px;
+}
+body .el-dialog .timeBox li {
+  margin-right: 40px;
+  float: left;
+}
+body .el-dialog .timeBox li:last-child {
+  margin-right: 0;
+}
+body .el-dialog .el-dialog__headerbtn {
+  top: 10px;
+  right: 54px;
+  font-size: 24px;
+}
+body .el-dialog .el-dialog__header {
+  height: 54px;
+  padding: 0;
+}
+body .el-dialog .el-dialog__title {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 58px;
+  font-size: 20px;
+  color: #36C6FF;
+  background-image: url("~@/assets/home/zst2.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center bottom;
+}
+body .el-dialog .el-dialog__body {
+  height: 640px;
+  overflow: auto;
+  font-size: 16px;
+  color: #36C6FF;
+  word-break: break-all;
+}
+body .el-icon-time {
+  display: none;
+}
+body .el-input__inner {
+  background-color: transparent;
+  border: 0;
+}
+body .el-date-editor--datetimerange.el-input__inner {
+  width: 504px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+body .el-date-editor .el-range-input {
+  width: 230px;
+  font-size: 24px;
+  color: #36C6FF;
+  background-color: transparent;
+}
+body .el-date-editor .el-range-separator {
+  color: #36C6FF;
+}
+body .popper__arrow {
+  display: none !important;
+}
+body .el-picker-panel {
+  padding-left: 25px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  color: #36C6FF;
+  background-image: url('~@/assets/home/timeBg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: transparent;
+  border: 0;
+}
+body .el-picker-panel .el-date-table td.next-month,
+body .el-picker-panel .el-date-table td.prev-month {
+  color: #195685;
+}
+body .el-picker-panel .el-date-table th {
+  color: #36C6FF;
+}
+body .el-picker-panel .el-input__inner {
+  color: #36C6FF;
+  border: 1px solid #36C6FF;
+}
+body .el-picker-panel .el-input.is-disabled .el-input__inner {
+  background-color: transparent;
+  border: 1px solid #36C6FF;
+}
+body .el-picker-panel .el-button {
+  color: #36C6FF;
+  background-color: transparent;
+  border: 0;
+}
+body .el-picker-panel .el-button.is-plain:focus,
+body .el-picker-panel .el-button.is-plain:hover {
+  color: #36C6FF;
+  background-color: transparent;
+  border: 0;
+}
+body .el-picker-panel .el-button.is-disabled.is-plain,
+body .el-picker-panel .el-button.is-disabled.is-plain:focus,
+body .el-picker-panel .el-button.is-disabled.is-plain:hover {
+  background-color: transparent;
+  border: 0;
+}
+body .el-picker-panel .el-picker-panel__icon-btn {
+  color: #36C6FF;
+}
+body .el-picker-panel .el-time-panel__content::after,
+body .el-picker-panel .el-time-panel__content::before {
+  top: 55%;
+  border-top: 1px solid #30B0E7;
+  border-bottom: 1px solid #30B0E7;
+}
+body .el-date-range-picker__time-header {
+  border: 0;
+}
+body .el-date-range-picker__content.is-left {
+  border: 0;
+}
+body .el-picker-panel__footer {
+  background-color: transparent;
+  border-top: 0;
+}
+body .el-time-panel {
+  background: #050D35;
+  border: 1px solid #36C6FF;
+}
+body .el-time-spinner__item {
+  color: #2CA0D6;
+}
+body .el-time-spinner__item.active:not(.disabled) {
+  color: #36C6FF;
+}
+body .el-time-panel__footer {
+  border-top: 0;
+}
+body .el-time-panel__btn {
+  color: #36C6FF;
+}
+body .el-time-panel__btn.confirm {
+  color: #36C6FF;
+}
